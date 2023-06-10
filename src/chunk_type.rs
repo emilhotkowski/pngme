@@ -1,13 +1,13 @@
 use std::{str::{FromStr, from_utf8}, fmt::{Display, Formatter}};
 
 // Following: http://www.libpng.org/pub/png/spec/1.2/PNG-Structure.html
-#[derive(PartialEq, Clone, Eq, Debug)]
-struct ChunkType {
+#[derive(PartialEq, Eq, Debug, Clone)]
+pub struct ChunkType {
     bytes: [u8; 4]
 }
 
 impl ChunkType {
-    fn bytes(&self) -> [u8; 4] {
+    pub fn bytes(&self) -> [u8; 4] {
         self.bytes
     }
 

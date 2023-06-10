@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.71"
 clippy = "0.0.302"
+crc = "3.0.1"
